@@ -7,22 +7,26 @@ permalink: leaderboard
 <p>
     Welcome to the LaMP benchmark leaderboard! To assess your results on the test set or submit your model for inclusion on the leaderboard, please fill <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXdGOvbiMwKB55T0jAJqskspKBlcsqSq_bCmRsvPc74Fy70A/viewform?usp=sf_link">this</a> form.
 </p>
-<p>
-  <strong>These are the results for the user-based separation setting. The results for the time-based setting will be added soon!</strong>
-</p>
 <div style="align-items: center">
 <table id="leaderboard-table" style="display: inline-table;">
     <thead>
       <div>
         <label for="column-select">Task:</label>
         <select id="column-select" onchange="changeColumn()">
-          <option value="1" selected>LaMP 1: Personalized Citation Identification</option>
-          <option value="2">LaMP 2: Personalized News Categorization</option>
-          <option value="3">LaMP 3: Personalized Product Rating</option>
-          <option value="4">LaMP 4: Personalized News Headline Generation</option>
-          <option value="5">LaMP 5: Personalized Scholarly Title Generation</option>
-          <option value="6">LaMP 6: Personalized Email Subject Generation</option>
-          <option value="7">LaMP 7: Personalized Tweet Paraphrasing</option>
+          <option value="1" selected>LaMP 1U: Personalized Citation Identification</option>
+          <option value="2">LaMP-2U: Personalized News Categorization</option>
+          <option value="3">LaMP-3U: Personalized Product Rating</option>
+          <option value="4">LaMP-4U: Personalized News Headline Generation</option>
+          <option value="5">LaMP-5U: Personalized Scholarly Title Generation</option>
+          <option value="6">LaMP-6U: Personalized Email Subject Generation</option>
+          <option value="7">LaMP-7U: Personalized Tweet Paraphrasing</option>
+          <option value="8">LaMP-1T: Personalized Citation Identification</option>
+          <option value="9">LaMP-2T: Personalized News Categorization</option>
+          <option value="10">LaMP-3T: Personalized Product Rating</option>
+          <option value="11">LaMP-4T: Personalized News Headline Generation</option>
+          <option value="12">LaMP-5T: Personalized Scholarly Title Generation</option>
+          <option value="13">LaMP-6T: Personalized Email Subject Generation</option>
+          <option value="14">LaMP-7T: Personalized Tweet Paraphrasing</option>
         </select>
       </div>
       <br>
@@ -41,6 +45,19 @@ permalink: leaderboard
         <th data-type="number" onclick="sortTable(16, false)" data-column="6" class="leader-board-header">&#8597;Rouge-L</th>
         <th data-type="number" onclick="sortTable(18, false)" data-column="7" class="leader-board-header">&#8597;Rouge-1</th>
         <th data-type="number" onclick="sortTable(19, false)" data-column="7" class="leader-board-header">&#8597;Rouge-L</th>
+        <th data-type="number" onclick="sortTable(21, false)" data-column="8" class="leader-board-header">&#8597;Accuracy</th>
+        <th data-type="number" onclick="sortTable(23, false)" data-column="9" class="leader-board-header">&#8597;Accuracy</th>
+        <th data-type="number" onclick="sortTable(24, false)" data-column="9" class="leader-board-header">&#8597;F1</th>
+        <th data-type="number" onclick="sortTable(26, true)" data-column="10" class="leader-board-header">&#8597;MAE</th>
+        <th data-type="number" onclick="sortTable(27, true)" data-column="10" class="leader-board-header">&#8597;RMSE</th>
+        <th data-type="number" onclick="sortTable(29, false)" data-column="11" class="leader-board-header">&#8597;Rouge-1</th>
+        <th data-type="number" onclick="sortTable(30, false)" data-column="11" class="leader-board-header">&#8597;Rouge-L</th>
+        <th data-type="number" onclick="sortTable(32, false)" data-column="12" class="leader-board-header">&#8597;Rouge-1</th>
+        <th data-type="number" onclick="sortTable(33, false)" data-column="12" class="leader-board-header">&#8597;Rouge-L</th>
+        <th data-type="number" onclick="sortTable(35, false)" data-column="13" class="leader-board-header">&#8597;Rouge-1</th>
+        <th data-type="number" onclick="sortTable(36, false)" data-column="13" class="leader-board-header">&#8597;Rouge-L</th>
+        <th data-type="number" onclick="sortTable(38, false)" data-column="14" class="leader-board-header">&#8597;Rouge-1</th>
+        <th data-type="number" onclick="sortTable(39, false)" data-column="14" class="leader-board-header">&#8597;Rouge-L</th>
       </tr>
     </thead>
     <tbody>
@@ -66,6 +83,26 @@ permalink: leaderboard
           <td data-column="7"><a href="{{ player.link }}">{{ player.task7_name }}</a></td>
           <td data-column="7">{{ player.task7_score_r1 }}</td>
           <td data-column="7">{{ player.task7_score_rl }}</td>
+          <td data-column="8"><a href="{{ player.link }}">{{ player.task1_name_t }}</a></td>
+          <td data-column="8">{{ player.task1_score_acc_t }}</td>
+          <td data-column="9"><a href="{{ player.link }}">{{ player.task2_name_t }}</a></td>
+          <td data-column="9">{{ player.task2_score_acc_t }}</td>
+          <td data-column="9">{{ player.task2_score_f1_t }}</td>
+          <td data-column="10"><a href="{{ player.link }}">{{ player.task3_name_t }}</a></td>
+          <td data-column="10">{{ player.task3_score_mae_t }}</td>
+          <td data-column="10">{{ player.task3_score_rmse_t }}</td>
+          <td data-column="11"><a href="{{ player.link }}">{{ player.task4_name_t }}</a></td>
+          <td data-column="11">{{ player.task4_score_r1_t }}</td>
+          <td data-column="11">{{ player.task4_score_rl_t }}</td>
+          <td data-column="12"><a href="{{ player.link }}">{{ player.task5_name_t }}</a></td>
+          <td data-column="12">{{ player.task5_score_r1_t }}</td>
+          <td data-column="12">{{ player.task5_score_rl_t }}</td>
+          <td data-column="13"><a href="{{ player.link }}">{{ player.task6_name_t }}</a></td>
+          <td data-column="13">{{ player.task6_score_r1_t }}</td>
+          <td data-column="13">{{ player.task6_score_rl_t }}</td>
+          <td data-column="14"><a href="{{ player.link }}">{{ player.task7_name_t }}</a></td>
+          <td data-column="14">{{ player.task7_score_r1_t }}</td>
+          <td data-column="14">{{ player.task7_score_rl_t }}</td>
         </tr>
       {% endfor %}
     </tbody>
@@ -117,7 +154,21 @@ permalink: leaderboard
         sortTable(15, false)
       } else if (selectedColumn == "7"){
         sortTable(18, false)
-      }
+      } else if (selectedColumn == "8"){
+        sortTable(21, false)
+      } else if (selectedColumn == "9"){
+        sortTable(23, false)
+      } else if (selectedColumn == "10"){
+        sortTable(26, true)
+      } else if (selectedColumn == "11"){ 
+        sortTable(29, false)
+      } else if (selectedColumn == "12"){
+        sortTable(32, false)
+      } else if (selectedColumn == "13"){
+        sortTable(35, false)
+      } else if (selectedColumn == "14"){
+        sortTable(38, false)
+      } 
 
       allCellsth.forEach((cell) => {
         if (cell.getAttribute("data-column") === selectedColumn) {
