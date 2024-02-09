@@ -203,3 +203,16 @@
   task7_name_t:  FlanT5-XXL-zeroshot
   task7_score_r1_t: 0.448
   task7_score_rl_t: 0.396
+
+- link: "https://github.com/pmineiro/lampstuff/tree/submit_2024_0122"
+  task1_name: Learning To Prompt
+  task1_score_acc: 0.782
+  task3_name: Learning To Prompt
+  task3_score_mae: 0.193
+  task3_score_rmse: 0.466
+  task4_name: Learning To Prompt
+  task4_score_r1: 0.221
+  task4_score_rl: 0.202
+  task5_name: Learning To Prompt
+  task5_score_r1: 0.472
+  task5_score_rl: 0.432

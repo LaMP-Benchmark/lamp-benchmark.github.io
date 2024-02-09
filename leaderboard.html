@@ -63,46 +63,74 @@ permalink: leaderboard
     <tbody>
       {% for player in site.data.leaderboard %}
         <tr>
+          {% if player.task1_name != null %}
           <td data-column="1"><a href="{{ player.link }}">{{ player.task1_name }}</a></td>
           <td data-column="1">{{ player.task1_score_acc }}</td>
+          {% endif %}
+          {% if player.task2_name != null %}
           <td data-column="2"><a href="{{ player.link }}">{{ player.task2_name }}</a></td>
           <td data-column="2">{{ player.task2_score_acc }}</td>
           <td data-column="2">{{ player.task2_score_f1 }}</td>
+          {% endif %}
+          {% if player.task3_name != null %}
           <td data-column="3"><a href="{{ player.link }}">{{ player.task3_name }}</a></td>
           <td data-column="3">{{ player.task3_score_mae }}</td>
           <td data-column="3">{{ player.task3_score_rmse }}</td>
+          {% endif %}
+          {% if player.task4_name != null %}
           <td data-column="4"><a href="{{ player.link }}">{{ player.task4_name }}</a></td>
           <td data-column="4">{{ player.task4_score_r1 }}</td>
           <td data-column="4">{{ player.task4_score_rl }}</td>
+          {% endif %}
+          {% if player.task5_name != null %}
           <td data-column="5"><a href="{{ player.link }}">{{ player.task5_name }}</a></td>
           <td data-column="5">{{ player.task5_score_r1 }}</td>
           <td data-column="5">{{ player.task5_score_rl }}</td>
+          {% endif %}
+          {% if player.task6_name != null %}
           <td data-column="6"><a href="{{ player.link }}">{{ player.task6_name }}</a></td>
           <td data-column="6">{{ player.task6_score_r1 }}</td>
           <td data-column="6">{{ player.task6_score_rl }}</td>
+          {% endif %}
+          {% if player.task7_name != null %}
           <td data-column="7"><a href="{{ player.link }}">{{ player.task7_name }}</a></td>
           <td data-column="7">{{ player.task7_score_r1 }}</td>
           <td data-column="7">{{ player.task7_score_rl }}</td>
+          {% endif %}
+          {% if player.task8_name != null %}
           <td data-column="8"><a href="{{ player.link }}">{{ player.task1_name_t }}</a></td>
           <td data-column="8">{{ player.task1_score_acc_t }}</td>
+          {% endif %}
+          {% if player.task9_name != null %}
           <td data-column="9"><a href="{{ player.link }}">{{ player.task2_name_t }}</a></td>
           <td data-column="9">{{ player.task2_score_acc_t }}</td>
           <td data-column="9">{{ player.task2_score_f1_t }}</td>
+          {% endif %}
+          {% if player.task10_name != null %}
           <td data-column="10"><a href="{{ player.link }}">{{ player.task3_name_t }}</a></td>
           <td data-column="10">{{ player.task3_score_mae_t }}</td>
           <td data-column="10">{{ player.task3_score_rmse_t }}</td>
+          {% endif %}
+          {% if player.task11_name != null %}
           <td data-column="11"><a href="{{ player.link }}">{{ player.task4_name_t }}</a></td>
           <td data-column="11">{{ player.task4_score_r1_t }}</td>
           <td data-column="11">{{ player.task4_score_rl_t }}</td>
+          {% endif %}
+          {% if player.task12_name != null %}
           <td data-column="12"><a href="{{ player.link }}">{{ player.task5_name_t }}</a></td>
           <td data-column="12">{{ player.task5_score_r1_t }}</td>
           <td data-column="12">{{ player.task5_score_rl_t }}</td>
+          {% endif %}
+          {% if player.task13_name != null %}
           <td data-column="13"><a href="{{ player.link }}">{{ player.task6_name_t }}</a></td>
           <td data-column="13">{{ player.task6_score_r1_t }}</td>
           <td data-column="13">{{ player.task6_score_rl_t }}</td>
+          {% endif %}
+          {% if player.task14_name != null %}
           <td data-column="14"><a href="{{ player.link }}">{{ player.task7_name_t }}</a></td>
           <td data-column="14">{{ player.task7_score_r1_t }}</td>
           <td data-column="14">{{ player.task7_score_rl_t }}</td>
+          {% endif %}
         </tr>
       {% endfor %}
     </tbody>
