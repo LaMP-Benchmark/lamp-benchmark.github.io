@@ -1,4 +1,5 @@
 - link: "https://arxiv.org/abs/2304.11406"
+  id: 1
   task1_name: FlanT5-base-finetuned + Contriever
   task1_score_acc: 0.734
   task2_name: FlanT5-base-finetuned + Contriever
@@ -40,6 +41,7 @@
   task7_score_r1_t: 0.516
   task7_score_rl_t: 0.465
 - link: "https://arxiv.org/abs/2304.11406"
+  id: 2
   task1_name: FlanT5-XXL-zeroshot + Contriever
   task1_score_acc: 0.699
   task2_name: FlanT5-XXL-zeroshot + Contriever
@@ -81,6 +83,7 @@
   task7_score_r1_t: 0.440
   task7_score_rl_t: 0.389
 - link: "https://arxiv.org/abs/2304.11406"
+  id: 3
   task1_name: GPT-3.5-zeroshot + Contriever
   task1_score_acc: 0.695
   task2_name: GPT-3.5-zeroshot + Contriever
@@ -122,6 +125,7 @@
   task7_score_r1_t: 0.382
   task7_score_rl_t: 0.318
 - link: "https://arxiv.org/abs/2304.11406"
+  id: 4
   task1_name: GPT-3.5-zeroshot
   task1_score_acc: 0.541
   task2_name: GPT-3.5-zeroshot
@@ -163,6 +167,7 @@
   task7_score_r1_t: 0.390
   task7_score_rl_t: 0.330
 - link: "https://arxiv.org/abs/2304.11406"
+  id: 5
   task1_name: FlanT5-XXL-zeroshot
   task1_score_acc: 0.520
   task2_name: FlanT5-XXL-zeroshot
@@ -205,6 +210,7 @@
   task7_score_rl_t: 0.396
 
 - link: "https://github.com/pmineiro/lampstuff/tree/submit_2024_0122"
+  id: 6
   task1_name: Learning To Prompt
   task1_score_acc: 0.782
   task3_name: Learning To Prompt
