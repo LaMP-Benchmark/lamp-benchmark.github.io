@@ -98,9 +98,6 @@
   task5_name: GPT-3.5-zeroshot + BM25
   task5_score_r1: 0.390
   task5_score_rl: 0.329
-  task6_name: GPT-3.5-zeroshot + BM25
-  task6_score_r1: 0.000
-  task6_score_rl: 0.000
   task7_name: GPT-3.5-zeroshot + Contriever
   task7_score_r1: 0.390
   task7_score_rl: 0.322
@@ -118,9 +115,6 @@
   task5_name_t:  GPT-3.5-zeroshot + Contriever
   task5_score_r1_t: 0.425
   task5_score_rl_t: 0.351
-  task6_name_t:  GPT-3.5-zeroshot + Contriever
-  task6_score_r1_t: 0.000
-  task6_score_rl_t: 0.000
   task7_name_t:  GPT-3.5-zeroshot + Contriever
   task7_score_r1_t: 0.382
   task7_score_rl_t: 0.318
@@ -140,9 +134,6 @@
   task5_name: GPT-3.5-zeroshot
   task5_score_r1: 0.387
   task5_score_rl: 0.329
-  task6_name: GPT-3.5-zeroshot
-  task6_score_r1: 0.000
-  task6_score_rl: 0.000
   task7_name: GPT-3.5-zeroshot
   task7_score_r1: 0.399
   task7_score_rl: 0.336
@@ -160,9 +151,6 @@
   task5_name_t:  GPT-3.5-zeroshot
   task5_score_r1_t: 0.424
   task5_score_rl_t: 0.355
-  task6_name_t:  GPT-3.5-zeroshot
-  task6_score_r1_t: 0.000
-  task6_score_rl_t: 0.000
   task7_name_t:  GPT-3.5-zeroshot
   task7_score_r1_t: 0.390
   task7_score_rl_t: 0.330
@@ -222,3 +210,26 @@
   task5_name: Learning To Prompt
   task5_score_r1: 0.472
   task5_score_rl: 0.432
+
+- link: "https://arxiv.org/abs/2404.05970"
+  id: 7
+  task1_name_t: ROPG-RSPG (FlanT5-XXL zero-shot)
+  task1_score_acc_t: 0.672
+  task2_name_t:  ROPG-RSPG (FlanT5-XXL zero-shot)
+  task2_score_acc_t: 0.430
+  task2_score_f1_t: 0.339
+  task3_name_t:  ROPG-RSPG (FlanT5-XXL zero-shot)
+  task3_score_mae_t: 0.264
+  task3_score_rmse_t: 0.568
+  task4_name_t:  ROPG-RSPG (FlanT5-XXL zero-shot)
+  task4_score_r1_t: 0.203
+  task4_score_rl_t: 0.186
+  task5_name_t:  ROPG-RSPG (FlanT5-XXL zero-shot)
+  task5_score_r1_t: 0.483
+  task5_score_rl_t: 0.431
+  task6_name_t:  ROPG-RSPG (FlanT5-XXL zero-shot)
+  task6_score_r1_t: 0.433
+  task6_score_rl_t: 0.418
+  task7_name_t:  ROPG-RSPG (FlanT5-XXL zero-shot)
+  task7_score_r1_t: 0.461
+  task7_score_rl_t: 0.409
